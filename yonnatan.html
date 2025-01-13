@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #e87352;
+    }
+
+    .rotating-image {
+      width: 1000vh;
+      height: 100vw;
+      background-image: url("yoni.jpg"); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rotating-image"></div>
+  <!-- <img id="main-img" alt="יש שגיאה במערכת" src="images/yoni.jpg" class="inner image"> -->
+
+</body>
+</html>
