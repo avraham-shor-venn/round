@@ -36,8 +36,14 @@
   </style>
 </head>
 <body>
-  <div class="rotating-image"></div>
-  <!-- <img id="main-img" alt="יש שגיאה במערכת" src="images/yoni.jpg" class="inner image"> -->
+  <div class="rotating-image" id="img"></div>
 
 </body>
+<script>
+  let index = 0;
+  const urls = ['url("yossi.jpg")', 'url("avshalom.jpg")', 'url("amichai.jpg")', 'url("avraham.jpg")', 'url("yoni.jpg")'];
+  setInterval(() => {
+    document.getElementById("img").style.backgroundImage = urls[index++ % urls.length];
+  }, 10000);
+</script>
 </html>
